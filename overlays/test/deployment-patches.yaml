@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-ex
+spec:
+  template:
+    spec:
+      containers:
+      - name: httpd-ex
+        image: image-registry.openshift-image-registry.svc:5000/argo-test/httpd-ex@sha256:82bbd9b92877aa23131d5458e055d09133ab3151ccc4638df0bc8417b23df028
